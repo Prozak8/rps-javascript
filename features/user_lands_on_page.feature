@@ -3,7 +3,6 @@ Feature: User sees rps game
     In order to have fun
     I would like to be able to play a game of RPS
 
-
     Scenario: User visits the site
         Given I visit the site
         Then I should see "Choose your weapon"
