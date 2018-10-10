@@ -21,6 +21,11 @@ class Rps {
 
     expect(actualContent).to.be.eq(expectedContent)
   }
+  async clickOnRockBtn() {
+    const btnSelector = '.rock'
+    await this.page.waitForSelector(btnSelector)
+    await this.page.click(btnSelector)
+  }
 }
 
 setWorldConstructor(Rps)
