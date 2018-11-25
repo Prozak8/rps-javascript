@@ -18,3 +18,14 @@ i {
     margin: 15px auto;
     padding: 5px;
 }
+
+#scoreboard {
+    width: 100%;  
+    display: grid;   
+    font-size: 20px;     
+    grid-template-areas:
+      'player-label middle-label opponent-label'
+      'player-score middle-col opponent-score'; 
+    grid-row-gap: 10px;   
+    justify-content: space-around; 
+}
