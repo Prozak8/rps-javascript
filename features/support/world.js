@@ -21,7 +21,7 @@ class Rps {
 
     expect(actualContent).to.be.eq(expectedContent)
   }
-  async clickOnRockBtn() {
+  async clickOnBtn() {
     const btnSelector = '.rock'
     await this.page.waitForSelector(btnSelector)
     await this.page.click(btnSelector)
