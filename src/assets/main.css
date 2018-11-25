@@ -24,8 +24,30 @@ i {
     display: grid;   
     font-size: 20px;     
     grid-template-areas:
-      'player-label middle-label opponent-label'
-      'player-score middle-col opponent-score'; 
+      'player-label opponent-label'
+      'player-score opponent-score'; 
     grid-row-gap: 10px;   
     justify-content: space-around; 
+}
+
+#your-score-label {
+    grid-area: player-label;
+    justify-self: center;
+    width: 200px;
+}
+
+#your-score {
+    grid-area: player-score;
+    justify-self: center;  
+}
+
+#opponent-score-label {
+    grid-area: opponent-label;
+    justify-self: center;
+    width: 200px;
+}
+
+#opponent-score {
+    grid-area: opponent-score;
+    justify-self: center;
 }
