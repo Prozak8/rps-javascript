@@ -5,7 +5,7 @@ global.paper = document.getElementById('paper');
 global.scissors = document.getElementById('scissors');
 global.playerScore = document.getElementById('player-score');
 global.opponentScore = document.getElementById('opponent-score');
-global.opponentChoice = document.getElementById('opponent-hand-choice');
+global.opponentChoice = document.getElementById('opponent-choice');
 
 const w = "win";
 const l = "lose";
