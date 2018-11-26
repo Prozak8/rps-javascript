@@ -46,6 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
       opponentScore += 1;
       global.playerScore.innerText = opponentScore;
     } else {}
+
+    setTimeout(resetOpponentArea, 1000);
   }
 
   function getOpponentChoice() {
@@ -60,5 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
         global.opponentChoice.classList.add('fa-hand-scissors');
       }
       return choice;
+  }
+
+  function resetOpponentArea() {
+    global.opponentChoice.classList = "";
   }
 })
