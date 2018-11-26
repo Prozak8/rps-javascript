@@ -1,5 +1,7 @@
 ## **RPS**
--------
+
+https://app.netlify.com/sites/zdh-rockpaperscissors/settings/general
+
 ### Built With
 
 * HTML
@@ -19,30 +21,6 @@ Rock, paper, scissors versus an AI.
 
 ### **User Stories**
 -------
-
-* **1:** 
-
-  ```
-    As a user
-    In order to have fun
-    I would like to be able to play a game of RPS
-  ```
-
-* **2:** 
-
-  ```
-    As a user
-    In order to play RPS
-    I would like to be able to choose
-  ```
-
-* **3:** 
-
-  ```
-    As a user
-    In order to see if I have won
-    I would like to be able to see the result
-  ```
 
 ### **Author**
 -------
