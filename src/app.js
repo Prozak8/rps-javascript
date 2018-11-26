@@ -37,19 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     getResult(2, opponentChoice);
   }
 
-  function getResult(playerChoice, opponentChoice) {
-    let result = global.resultEngine[opponentChoice][playerChoice];
-    if (result === "win") {
-      playerScore += 1;
-      global.playerScore.innerText = playerScore;
-    } else if (result === "lose") {
-      opponentScore += 1;
-      global.playerScore.innerText = opponentScore;
-    } else {}
-
-    setTimeout(resetOpponentArea, 1000);
-  }
-
   function getOpponentChoice() {
     let choice = Math.floor(Math.random() * 3);
       global.opponentChoice.innerHtml = ""
@@ -62,6 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
         global.opponentChoice.classList.add('fa-hand-scissors');
       }
       return choice;
+  }
+
+  function getResult(playerChoice, opponentChoice) {
+    let result = global.resultEngine[opponentChoice][playerChoice];
+    if (result === "win") {
+      playerScore += 1;
+      global.playerScore.innerText = playerScore;
+    } else if (result === "lose") {
+      opponentScore += 1;
+      global.opponentScore.innerText = opponentScore;
+    } else {}
+
+    setTimeout(resetOpponentArea, 1000);
   }
 
   function resetOpponentArea() {
