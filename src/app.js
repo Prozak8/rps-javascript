@@ -3,8 +3,8 @@ const global = {}
 global.rock = document.getElementById('rock');
 global.paper = document.getElementById('paper');
 global.scissors = document.getElementById('scissors');
-global.playerScore = document.getElementById('player-score');
-global.opponentScore = document.getElementById('opponent-score');
+global.playerScore = document.getElementById('player-score-count');
+global.opponentScore = document.getElementById('opponent-score-count');
 global.opponentChoice = document.getElementById('opponent-choice');
 
 const w = "win";
@@ -41,8 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let result = global.resultEngine[opponentChoice][playerChoice];
     if (result === "win") {
       playerScore += 1;
+      global.playerScore.innerText = playerScore;
     } else if (result === "lose") {
       opponentScore += 1;
+      global.playerScore.innerText = opponentScore;
     } else {}
   }
 
