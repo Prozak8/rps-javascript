@@ -1,4 +1,4 @@
-h1, h2 {
+h1 {
     text-align: center;
     font-size: 30px;
 }
@@ -24,8 +24,8 @@ i {
     display: grid;   
     font-size: 20px;     
     grid-template-areas:
-      'player-label opponent-label'
-      'player-score opponent-score'; 
+      'player-label round-label opponent-label'
+      'player-score round-count opponent-score'; 
     grid-row-gap: 10px;   
     justify-content: space-around; 
 }
